@@ -1,0 +1,136 @@
+.banner {
+    
+    background-color: rgba(67, 67, 67, 0.144);
+    border-radius: 0.4em;
+    height: 29em;
+    margin-top: 0.5em;
+    padding: 1em;
+  }
+  .banner___aside-left {
+    width: 20%;
+    display: flex;
+    justify-content: end;
+  }
+  #banner__junkFood {
+    transition: all 2s ease-in-out;
+    width: 12em;
+  }
+  .banner__text {
+    width: 40%;
+  }
+  .banner__text h1 {
+    font-weight: 900;
+    font-size: 3rem;
+  }
+  .banner__btn-pedir-ahora {
+    display: block;
+    width: 70%;
+    margin-top: 2em;
+    background-color: #000;
+    color: white;
+    padding: 0.6em;
+    border-radius: 0.5em;
+    transform: all 2s;
+  }
+  .banner__btn-pedir-ahora:hover {
+    color: var(--body-color);
+    background: rgb(31, 31, 31);
+  }
+  @media screen and (max-width: 1000px) {
+    .banner {
+      display: flex;
+      flex-flow: column;
+      position: relative;
+    }
+    .banner__text {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .banner__text p {
+      position: absolute;
+      top: 20%;
+    }
+  
+    .banner___aside-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+  
+    .banner___aside-right {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: -99;
+      opacity: 0.5;
+    }
+    /* Annoucment */
+    
+  }
+ 
+  @media screen and (max-width: 830px) {
+    /* annoucement */
+    .annou__text,
+    .annou__text-span,
+    .annou__text-terms,
+    .btn-Registar {
+      font-size: 0.6em;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .banner__text h1 {
+      font-size: 2rem;
+    }
+    .banner__text p {
+      position: absolute;
+      top: 25%;
+    }
+    /* N */
+    .annou__text,
+    .annou__text-span,
+    .annou__text-terms,
+    .btn-Registar {
+      font-size: 0.5em;
+    }
+    .btn-Registar {
+      background: none;
+      color: rgb(176, 176, 119);
+      font-weight: 800;
+      border: none;
+      padding: 0;
+      border-radius: 0;
+      /* line-height: 30px; */
+      transition: all 0.5s;
+    }
+    .annou__text-span {
+      position: absolute;
+      bottom: 12.4%;
+      left: 5rem;
+      /* align-self: flex-end; */
+    }
+    .annou__text-terms {
+      position: absolute;
+      bottom: 12.4%;
+      left: 11.5rem;
+    }
+    .annou__content {
+      /* justify-content: flex-start; */
+      align-content: center;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .banner {
+      min-width: 250px;
+    }
+  }

@@ -1,0 +1,43 @@
+.containerInfo {
+    background-color: var(--text-color-light);
+    padding-top: 1rem;
+    /* margin-bottom: 2rem; */
+  }
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+  }
+  .footer__listItems {
+    margin-top: 2rem;
+    /* width: 15%; */
+  }
+  .footer__listItem a {
+    color: #000;
+    font-size: 0.8em;
+  }
+  .footer__redesSociales {
+    padding: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--body-color);
+  }
+  .footer__redesSociales a i {
+    font-size: 1.4rem;
+  }
+  .footer__redesSociales a {
+    cursor: pointer;
+  }
+
+.button-facebook:hover{
+    color:  #1877F2;
+}
+.button-instagram:hover{
+    color:   #BC2A8D;
+}
+.button-twitter:hover{
+    color:  #1DA1F2;
+}

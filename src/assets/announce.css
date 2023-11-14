@@ -1,0 +1,140 @@
+:root {
+  --header-height: 1rem;
+  --p-: 0.7em;
+  --first-color: #0071e3;
+  --title-color: #044186;
+  --text_color: #043f7b;
+  --text-color-light: rgb(247, 248, 249);
+  --body-color: #fbfefd;
+  --btn-rappi: rgb(41, 216, 132);
+  --btn-rappi-hover: rgb(53, 199, 128);
+  --lines-color: rgba(225, 225, 225, 0.5);
+  --font-family: "Erica One", cursive;
+  --font-tittle: "Poppins", sans-serif;
+  --font-text: "Poppins", sans-serif;
+  --text-size: 1rem;
+}
+.annou {
+  position: relative;
+  width: 100%;
+  padding: 0.4em;
+  background: rgb(1, 11, 81);
+  /* height: 15rem; */
+}
+.annou__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8em;
+}
+.annou__text,
+.annou__text-span,
+.annou__text-terms {
+  font-size: 0.9rem;
+  color: var(--body-color);
+}
+.annou__text-span {
+  font-weight: bold;
+}
+.btn-Registar {
+  background: var(--btn-rappi);
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  font-weight: 800;
+  border: none;
+  padding: 0.3em 0.7em;
+  border-radius: 0.6em;
+  line-height: 30px;
+  transition: all 0.5s;
+}
+.btn-Registar:hover {
+  background: var(--btn-rappi-hover);
+  color: var(--body-color);
+}
+.annou__text-terms:hover {
+  color: var(--body-color);
+}
+.annou__text-terms {
+  text-decoration: underline;
+}
+.annou__icon3dFrench-fries {
+  width: 3em;
+  height: 3em;
+}
+.annou__btn-x {
+  position: absolute;
+  right: 1em;
+  top: 1.2em;
+  cursor: pointer;
+}
+.annou__text {
+  margin: 0;
+}
+.annou {
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width : 400px){
+    .annou{
+        display: none;
+
+    }
+    
+}
+/* @media screen and (max-width: 900px) {
+      /*  */
+/* .annou__text,
+      .annou__text-span,
+      .annou__text-terms,
+      .btn-Registar {
+        font-size: 0.8em;
+      }
+    } */
+/* annoucement */
+/* @media screen and (max-width: 830px) {
+      .annou__text,
+      .annou__text-span,
+      .annou__text-terms,
+      .btn-Registar {
+        font-size: 0.6em;
+      }
+    }
+    @media screen and (max-width: 640px) {
+     
+  
+      .annou__text,
+      .annou__text-span,
+      .annou__text-terms,
+      .btn-Registar {
+        font-size: 0.5em;
+      }
+      .btn-Registar {
+        background: none;
+        color: rgb(176, 176, 119);
+        font-weight: 800;
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        transition: all 0.5s;
+      }
+      .annou__text-span {
+        position: absolute;
+        bottom: 12.4%;
+        left: 5rem;
+      }
+      .annou__text-terms {
+        position: absolute;
+        bottom: 12.4%;
+        left: 11.5rem;
+      }
+      .annou__content { */
+/* justify-content: flex-start; */
+/*     align-content: center;
+      }
+    }*/
+    .slider-food{
+      /* padding-left: 2rem; */
+    }
+    .swiper-container{
+}
+  
