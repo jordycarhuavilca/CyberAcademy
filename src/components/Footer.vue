@@ -7,13 +7,13 @@
         <li class="footer__listItem"><a href="">Quiénes somos</a></li>
         <li class="footer__listItem"><a href="">Termino y Condiciones</a></li>
         <li class="footer__listItem"><a href="">Privacidad</a></li>
-        <li class="footer__listItem"><a href="">Sé parte de FastFood</a></li>
+        <li class="footer__listItem"><a href="">Sé parte de Cyber Academy</a></li>
         <li class="footer__listItem"><a href="">Blog</a></li>
       </ul>
       <ul class="footer__listItems text-sm-center">
-        <li class="footer__listItem"><a href="">Top comidas</a></li>
-        <li class="footer__listItem"><a href="">Top Cadenas</a></li>
-        <li class="footer__listItem"><a href="">Top Ciudades</a></li>
+        <li class="footer__listItem"><a href="">Top coursos</a></li>
+        <li class="footer__listItem"><a href="">Top profesors</a></li>
+        <li class="footer__listItem"><a href="">Top compañias</a></li>
       </ul>
       <ul class="footer__listItems text-sm-center">
         <li class="footer__listItem"><a href="">Registrate</a></li>

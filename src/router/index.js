@@ -4,14 +4,43 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: import('../views/Home.vue')
+    component:() =>  import('../views/Home.vue'),
   },
   
   {
-    path : '/login',
+    path : '/join/login',
     name : 'login',
-    component : import('../views/Login.vue')
-  }
+    component :() =>  import('../views/Login.vue')
+  },
+  {
+    path: '/courses/search',
+    name: 'CourseSearch',
+    component: () => import('../views/Courses.vue'),
+    props: (route) => ({ query: route.query.q})
+  },
+  {
+    path: '/courses/:category/:subCategory?',
+    name: 'CourseDevelopment',
+    component: () => import('../views/Courses.vue'),
+    props: true
+  },
+  {
+    path: '/topic/:topic',
+    name: 'CourseTopic',
+    component: () => import('../views/Courses.vue'),
+    props: true
+  },
+  {
+    path: '/coursesInfo/:courseId',
+    name: 'courseInfo',
+    component: () => import('../views/CourseInfo.vue'),
+    props: true
+  },
+  {
+    path: '/my-courses/wishlist',
+    name: 'wishlist',
+    component: () => import('../views/WishList.vue'),
+  },
 ]
 
 const router = createRouter({

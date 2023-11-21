@@ -7,6 +7,7 @@ export default{
   data() {
     return {
       isMenuVisible: true, // Set to true to initially show the menu
+      userInfo : {}
     };
   },
   watch : {
@@ -18,7 +19,14 @@ export default{
       } else {
         this.isMenuVisible = true;
       }
-
+      if (to.name ==='home') {        
+        const payload = this.$route.query;
+        if (Object.keys(payload).length > 0) {
+          
+          localStorage.setItem('payload',JSON.stringify(payload))
+          this.userInfo = payload
+      }
+      }
   }
   }
 }
@@ -26,10 +34,18 @@ export default{
 
 <template>
   <div>
-    <header v-if="isMenuVisible">
-      <Menu />
+    <header v-if="isMenuVisible"  >
+      <Menu :payload="userInfo"/>
     </header>
     <router-view></router-view>
   </div>
   <div></div>
 </template>
+
+<style scoped>
+
+body {
+  overflow: hidden;
+  position: relative;
+}
+</style>

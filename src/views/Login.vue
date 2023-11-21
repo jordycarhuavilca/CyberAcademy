@@ -167,9 +167,6 @@
       <p>Elige una forma de registrarte</p>
       <a href="./profile.html">Llenar formulario</a>
       <button type="button" id="google">Sign in google</button>
-      <a href="http://localhost:3006/api/auth/google" rel="noopener noreferrer"
-        >goole</a
-      >
     </div>
     <div class="registrated-account">
       <i class="bx bxs-check-circle"></i>

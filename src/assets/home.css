@@ -1,4 +1,42 @@
-.useGrid{
-    display: grid;
-    grid-template-columns: repeat(3,);
+.partnerCompanies{
+    margin-top: 3rem;
+    background: #e1e1e1c8;
+    /* padding: 5em; */
+    height: 16em;
+}
+.listCompanies{
+    height: 100%;
+}
+.listaItems{
+    width: 100%;
+}
+.discovery-units{
+    margin-top: 5rem;
+    padding: 0 6rem 0 6rem;
+}
+.CategoriasOpciones{
+    padding-top: 2rem;
+}
+.containerCategory{
+    margin-top: 1rem;
+    padding: 2rem;
+    border: 2px solid #929292c8;
+}
+.btn-explorer{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: .6rem;
+    font-weight: bold;
+    border: 2px solid #000000c8;
+}
+.listCategorias li{
+    color: #4b4b4bc8;
+    font-weight: 800;
+    cursor: pointer;
+}
+.listCategorias li:hover{
+    color: black;
+}
+.container-mostPopularCourses{
+    padding: 3rem;
 }

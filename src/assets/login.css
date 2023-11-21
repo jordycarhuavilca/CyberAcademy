@@ -7,8 +7,9 @@
   --first-color: #0071e3;
   --first-color-hover: #0971d8;
 }
+
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 }
 .comeback {

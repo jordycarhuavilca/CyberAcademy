@@ -1,0 +1,151 @@
+.coursesContainer{
+    padding: 0 6rem 0 6rem;
+    width: 100%;
+}
+.search-header-title{
+    padding: 3.5rem 0 1rem 0;
+}
+.search-header-title span{
+    font-weight: 800;
+    color :#383737;
+}
+.coursesBody{
+    width: 100%;
+}
+main{
+    width: 100%;
+}
+.optionsCommands{
+    width: 50%;
+}
+aside{
+    width: 341px;
+}
+.btnOpenClose{
+    cursor: pointer;
+    border: 2px solid #000;
+    padding: .8rem;
+    height: 4rem;
+}
+.btnOpenClose span{
+    font-weight: 800;
+}
+.filtro {
+    appearance: none;
+    /* padding: 5px; */
+    border: 1px solid #ccc;
+    padding-right: 20px;
+}
+
+.btnFilter{
+    cursor: pointer;
+    padding: .8rem;
+    border: 2px solid #000;
+    width: 14rem;
+    height: 4rem;
+}
+.title_sortBy{
+    font-size: .75em;
+    font-weight: 600;
+}
+.filtro{
+    background-color: transparent;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+
+.selected-option{
+    font-size: .75em;
+}
+.options{
+    position: relative;
+    z-index: 10;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    /* border-radius:  1rem;    */
+}
+.option{
+    padding: .6rem;
+    height: fit-content;
+    font-size: .75em;
+}
+.option:hover{
+    background: #0071e3;
+}
+.valoracionByStarts{
+    position: relative;
+    height: 50px;
+    margin-top: 1.7rem;
+    padding-top: 1rem;
+    z-index: 0;
+}
+.valoracionByStarts ::after{
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 1px; 
+    background-color: #929292c8; 
+}
+
+.valoracionByStarts .close{
+    position: absolute;
+}
+.valoraciones{
+    margin-top: 2rem;
+}
+.container_listCourses{
+    width: 100%;
+    padding-top: 1rem;
+}
+.courseImg:hover{
+    opacity: .8;
+}
+.card_body{
+    padding-top: .6rem;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 1.5rem;
+}
+.card_body ::after{
+    z-index: 0;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: .8px; 
+    background-color: #cdcdcdc8; 
+}
+.body_title{
+    font-weight: 800;
+    font-size: clamp(.5rem,.88rem,1rem);
+}
+.body_description{
+    font-size: clamp(.5rem,.8rem,1rem);
+
+}
+.bodyInfo{
+    width: 80%;
+}
+.precio{
+    font-weight: 600;
+
+    width: 20%;
+}
+.body_userInfo{
+    font-size: clamp(.6rem,.7rem,1rem);
+
+}
+.qualification{
+    font-size: clamp(.6rem,.9rem,1rem);
+    margin-right: .3rem;
+}
+
+.body_quantityPeople{
+    font-size: clamp(.6rem,.7rem,1rem);
+
+}

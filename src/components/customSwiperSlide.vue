@@ -1,5 +1,5 @@
 <template>
-  <div v-if="listCourses.length >= 1">
+  <div v-if="list.length >= 1">
     <swiper
      class="ps-5  d-flex justify-content-center align-items-center"
      :modules="modules"
@@ -37,39 +37,8 @@
      @swiper="onSwiper"
      @slideChange="onSlideChange"
    >
-     <!-- <swiper-slide class="m-0 pl-5">
-       <div class="swiper-slide_body">
-           <img
-             class="img-fluid"
-             :src="listCourses[0].image"
-           />
-         <div>
-          <p>{{listCourses[0].tittle}}</p>
-          <span>author</span>
-          <div>
-            <span>4,6</span>
-            <span>estrellita</span>
-            <span>(total)</span>
-          </div>
-         </div>          
-       </div>
-     </swiper-slide> -->
-     <swiper-slide v-for="(list,index) of listCourses" :key="index">
-      <div class="swiper-slide_body">
-           <img
-             class="img-fluid"
-             :src="list.image"
-           />
-         <div>
-          <p>{{list.tittle}}</p>
-          <span>author</span>
-          <div>
-            <span>4,6</span>
-            <span>estrellita</span>
-            <span>(total)</span>
-          </div>
-         </div>          
-       </div>
+     <swiper-slide v-for="(course,index) of list" :key="index">
+      <card_course :course="course"/>
      </swiper-slide>
    </swiper>
 
@@ -78,6 +47,7 @@
 
 <script>
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import card_course from "../components/card_course.vue"
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -87,13 +57,14 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+    card_course
   },
   props : {
-    listCourses : Array
+    list : Array
   },
   data(){
     return {
-      isMaxSize  :false
+      isMaxSize  :false,
     }
   },
   methods: {
@@ -101,14 +72,13 @@ export default {
       if (breakpoint.currentBreakpoint === "@0.00") this.isMaxSize = true;
       else this.isMaxSize = false
     },
+   
   },
   setup() {
     const isMaxSize = ref(true);
     const onSwiper = (swiper) => {
-      console.log(swiper);
     };
     const onSlideChange = () => {
-      console.log("slide change");
     };  
     return {
       isMaxSize,
@@ -121,10 +91,5 @@ export default {
 </script>
 
 <style>
-/* @import "../assets/announce.css"; */
-
-@import "../assets/slide.css";
-/* @import "bulma/css/bulma.css"; */
 @import "@splidejs/vue-splide/css/core";
-/* @import "bootstrap/dist/css/bootstrap.css"; */
 </style>

@@ -1,28 +1,8 @@
 <template>
-  <div class="banner d-flex justify-content-around align-items-center">
-    <aside class="banner___aside-left">
-      <img id="banner__junkFood" :src="currentImg" alt="" />
-    </aside>
-    <section
-      class="banner__text d-flex flex-column align-items-center text-center"
-    >
-      <h1>¡30 días de entrega gratis!</h1>
-      <p class="h3">a todo el <span>Peru</span></p>
-      <a
-        href="./html/carrito/comida__china.html"
-        class="banner__btn-pedir-ahora"
-      >
-        pide ahora
-      </a>
-    </section>
-    <aside class="banner___aside-right align-self-end">
-      <article class="align-self-end">
-        <img
-          src="https://ouch-cdn2.icons8.com/Km7duGOEYNVt50aTVN1venNU5G5RfMaD_1R8CdaR5Qo/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzIx/LzlhNDU2Mzc2LTZi/MzctNGFhOS04N2E4/LWVhODdiNjM2MmYw/Ny5zdmc.png"
-          alt=""
-        />
-      </article>
-    </aside>
+  <div class="banner d-flex flex-column justify-content-center align-items-center">
+    <h1>¡SE VIENEN LOS DESCUENTOS!</h1>
+    <p class="h3">Y TU LO SABES</p>
+   
   </div>
 </template>
 

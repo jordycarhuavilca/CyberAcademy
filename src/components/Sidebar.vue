@@ -100,6 +100,10 @@ export default {
   },
   methods: {
     logOut() {
+      const payload = JSON.parse(localStorage.getItem('payload'))
+
+      if (payload) {
+        
         Swal.fire({
         title: "¿Estas seguro de salir?",
         icon: "warning",
@@ -109,9 +113,15 @@ export default {
         confirmButtonText: "Si",
       }).then((result)=>{
         if(result.isConfirmed){
-          console.log('Logout confirmed')
+          localStorage.clear()
+          this.isOpen = false;          
+          this.$router.push('/join/login')
+          this.$router.push('/')
+
+          window.location.reload();
         }
       });
+      }
     },
     enable() {
       this.isOpen = true;
